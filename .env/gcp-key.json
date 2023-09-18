@@ -1,0 +1,14 @@
+{
+  "type": "service_account",
+  "project_id": "symmetric-axle-399406",
+  "private_key_id": "49d9a9e30da6666e9ad8b3f160a52f19d4799228",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDZCzFONyS43XxY\nwb8cANW+aneG1Fjt9hyGCWLR9IvJCN68zUTV6Y5wlb5SYYWJBKGmdVp7XdYmSOAX\n0QkwnuSm08FYPbacNWv4h1tDo5fFwOmbbeeWjmazVC6SjcukCQrFwNkVGStoszhI\nu1EHEnMFx+Ax0o2u5QLGfg2RoEqHwNV2uSa9cVZ5wCJeRf0aZB0f13r4H2H8aoIK\nMsRkhy5V6//+9xdAXiMnXQqz8gYPyxrgoNLoH2AUzgGN81TowC7s8JCDq8s6CQA6\nMMjeuNwwPP9/oSKCaNr99a36JVC2J72KTEiL32yWEQyyjIXS5vxevyQL6em82oXR\nWQ/e2BMXAgMBAAECggEARuKc68qet7G+ls5QODkdld73wpU/phgnIK+YErInpTS8\najUwMhzhZGvDiOxIzIMyuEbDkl8HPeG3LpAazEJYsxOdpdAh/8qCxNyQNfsL6o4i\nvZybclR3vkHUJBEjXSOG3ScqvvVFdCB0VWy3/fNMlaq90gfONjydN26bx9/t93+s\nu/KA7XplV1ZB/3TaNJFffxjJfJNcwv14pFaBIkk8FS23wWqUhZzs79VBxF9UY3Tp\nK2obmnMuUelo/6eka4+EoKQtw7qDAnHpdFDCAU9zULjx3OsETjfRo/ddmiJ0zeLY\nx8fVcSQpVzKgfUSo3mr93S8N0Vq+O9rlXZFk/C1HQQKBgQD/xIqjStnvY6Akd8QY\nRbn+njrYkurRPOsaRWgUV/nxbuJOG2o5jKZsxAun1hcJAduKYfvWykPRfbbsYFzt\nwig32L3o1qUXXGIoQnrMrDLL5OISPQtwqE/LeJjclMAWUT/ZviqfBDRdGbRRjKOM\nk4TtbpUq5JTBhgY3rnCmzmKXPwKBgQDZPaYbWD0jzO6mtnC/KZaZW5MPH3E2ZSVr\neo1KFttuMr/dPl+Vsr5U+Todt1Ry81IDyfSnGHdR3cFdHnZApdpRsFfMkBQpQeqi\n4n2ZnnwOqmnGS3kF5Q1XVWnP5SGwRYak2rc/gGCKozW+c03MSZ9vhzBM3xXR4IJ7\nSw/NIUWmKQKBgDxVvO6wZaDXO5vetN+U8z9hTDhyz/n0CPH1lYvXBRszMSeDyBcz\nWr8lsCozktOJIKUQYDxXEpCEu3YfdUyRFLO36XTXzbIpFO6yYA2QQZtfrwTmaaB1\n0/0HweenH3kkSY+wEJXahA/CVIs4RgyPcDgicgXgTkcouqa/+8sdvJw5AoGBALce\nU0VbhPYHiee3g6Rv3wVYfsbRnzHV4swNWsnoKIFkf/xz1kiuiefAya9A2QuodSrC\nctrjMbktbxAaXF20MCqJtgi2Lnh0mt9AgdUbFcGa/lxrRBGm+S7zzaSzpUkb4hpW\nTv9VLIvQdb4bHaolKSLu1tUFezQVxoc9R42HDVm5AoGAcE9k5nzSOPgfsqo/lzdi\nGqjSSRh4ZxDvYZpgTZQIEmcHada+gvyAhEGcoDzWCY71A4JHdQXrfgvEjEVL2l9E\nip8MD1557JQtgCvWsummvobbY6/Je/8ytAjIEO6brKl2PpUxxqmy/nOxLWqRUnQs\nIfWswWGgdeF9uJqaRHQ2mWI=\n-----END PRIVATE KEY-----\n",
+  "client_email": "bo-neko@symmetric-axle-399406.iam.gserviceaccount.com",
+  "client_id": "101810706106793431177",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/bo-neko%40symmetric-axle-399406.iam.gserviceaccount.com",
+  "universe_domain": "googleapis.com"
+}
+

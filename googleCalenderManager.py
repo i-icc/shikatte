@@ -1,22 +1,25 @@
 import datetime
-import googleapiclient.discovery
-import google.auth
+import google
+from googleapiclient.discovery import build
 
 class GoogleCalenderManager:
-    SCOPES = ['https://www.googleapis.com/auth/calendar']
+    SCOPES = ['https://www.googleapis.com/auth/calendar.readonly']
 
-    def __init__(self, calendar_id) -> None:
+    def __init__(self, calendar_id:str = 'primary') -> None:
         self.calendar_id = calendar_id
         self.gapi_creds = google.auth.load_credentials_from_file('.env/gcp-key.json', self.SCOPES)[0]
-        self.service = googleapiclient.discovery.build('calendar', 'v3', credentials=self.gapi_creds)
+        self.service = build('calendar', 'v3', credentials=self.gapi_creds)
 
-    def build_events(self, max_result = 1):
+    def build_events(self, max_result:int = 1):
         now = datetime.datetime.utcnow().isoformat() + 'Z'
 
         event_list = self.service.events().list(
-            calendarId=self.calendar_id, timeMin=now,
-            maxResults=max_result, singleEvents=True,
-            orderBy='startTime').execute()
+                calendarId=self.calendar_id, 
+                timeMin=now,
+                maxResults=max_result,
+                singleEvents=True,
+                orderBy='startTime'
+            ).execute()
         
         event_list_items = event_list.get('items', [])
         self.events = [(event['start'].get('dateTime', event['start'].get('date')), # start time or day

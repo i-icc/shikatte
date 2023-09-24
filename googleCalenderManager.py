@@ -13,7 +13,7 @@ class GoogleCalenderManager:
     def build_events(self, max_result:int = 1):
         now = datetime.datetime.utcnow().isoformat() + 'Z'
 
-        event_list = self.service.events().list(
+        self.events = self.service.events().list(
                 calendarId=self.calendar_id, 
                 timeMin=now,
                 maxResults=max_result,
@@ -21,12 +21,14 @@ class GoogleCalenderManager:
                 orderBy='startTime'
             ).execute()
         
-        event_list_items = event_list.get('items', [])
-        self.events = [(event['start'].get('dateTime', event['start'].get('date')), # start time or day
+        return self
+    
+    def get_formated_events(self):
+        event_list_items = self.events.get('items', [])
+        return [(event['start'].get('dateTime', event['start'].get('date')), # start time or day
             event['end'].get('dateTime', event['end'].get('date')), # end time or day
             event['summary']) for event in event_list_items]
         
-        return self
     
     def get_events(self):
         return self.events

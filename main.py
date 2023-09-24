@@ -2,7 +2,8 @@ import config
 from googleCalenderManager import GoogleCalenderManager
 
 def main():
-    gcm = GoogleCalenderManager()
+    calender_id = config.CALENDER_ID
+    gcm = GoogleCalenderManager(calender_id)
     gcm.build_events()
     print(gcm.get_events())
 

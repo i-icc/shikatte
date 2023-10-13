@@ -5,10 +5,8 @@ permissions:
   pull-requests: write
 
 on:
-  pull_request_target:
-    types: [opened, edit, synchronize, reopened]
-  pull_request_review_comment:
-    types: [created]
+  pull_request:
+    types: [opened, edited]
 
 concurrency:
   group:

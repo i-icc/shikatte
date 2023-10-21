@@ -7,3 +7,4 @@ with open('./.env/env.json') as f:
 
 CLIENT_ID = d['client_id']
 CALENDER_ID = dd['calender_id']
+DEVICE_NAME = dd["device_name"]
